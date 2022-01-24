@@ -7,7 +7,7 @@ const Layout = ({children}) => {
 	return (
 		<>
 			<Head>
-				<title>Brian's</title>
+				<title>Brian</title>
 			</Head>
 			<Box maxWidth={1280} m='auto'>
 				<header>
