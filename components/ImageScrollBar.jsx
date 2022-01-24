@@ -39,8 +39,9 @@ const ImageScrollBar =({photos}) =>(
 
 	<ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} style={{ overflow: 'hidden' }} >
 		{photos.map( photo=>(
-			<Box itemId={photo.id} w={950}  overflow='hidden' p={1} > 
-				<Image src={photo.url} placeholder='blur' blurDataURL={photo.url} 
+
+			<Box itemId={photo.id} key={photo.id} w={950}  overflow='hidden' p={1} > 
+				<Image   src={photo.url} placeholder='blur' blurDataURL={photo.url} 
 					width={1050} height={500} 
 					sizes="(max-width:500px) 384w, (max-width:1023px) 640w, 1090w"
 					alt="property"
