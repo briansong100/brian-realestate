@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   Router.events.on("routeChangeStart", ()=>NProgress.start())
   Router.events.on("routeChangeComplete", ()=>NProgress.done())
 
-  return (
+  return ( 
     <>
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
